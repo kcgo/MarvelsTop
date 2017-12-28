@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp">
+
+
+            <ImageView
+                android:id="@+id/iv_banner"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/description"
+                android:layout_below="@+id/iv_banner"/>
+
+            <ImageButton
+                android:id="@+id/ib_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/iv_banner"
+                android:background="@android:color/transparent"
+                android:src="@drawable/share_selector" />
+
+            <ImageButton
+                android:id="@+id/ib_marker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_banner"
+                android:layout_marginEnd="22dp"
+                android:layout_marginRight="22dp"
+                android:layout_toLeftOf="@+id/ib_share"
+                android:layout_toStartOf="@+id/ib_share"
+                android:background="@android:color/transparent"
+                android:src="@drawable/marker_selector" />
+
+            <ImageButton
+                android:id="@+id/ib_like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_banner"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_toLeftOf="@+id/ib_marker"
+                android:layout_toStartOf="@+id/ib_marker"
+                android:background="@android:color/transparent"
+                android:src="@drawable/like_selector" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_series"
+        android:layout_width="match_parent"
+        android:padding="12dp"
+        tools:listitem="@layout/list_item"
+        android:layout_height="match_parent"
+        android:layout_below="@id/cv_container"
+        android:scrollbarAlwaysDrawVerticalTrack="true" />
+
+
+</RelativeLayout>
+
+
+
+
+
+

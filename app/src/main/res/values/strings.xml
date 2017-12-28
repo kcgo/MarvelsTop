@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MarvelTops</string>
+    <string name="learn_more">LEARN MORE</string>
+    <string name="share">Share</string>
+    <string name="texto">TEXTO</string>
+    <string name="nome_da_series">Nome da Series</string>
+    <string name="title">title</string>
+    <string name="description">description</string>
+</resources>
